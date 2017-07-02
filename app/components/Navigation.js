@@ -42,7 +42,7 @@ var Navigation = React.createClass({
                   <ul className="dropdown-menu dropdown-menu-right">
                       <li><Link to="Profile">My Profile</Link></li>
                       <li><Link to="Treks">Create a Trek</Link></li>
-                      <li><Link to="Displaytour">Temp link to results</Link></li>
+                      <li><Link to="ResultsPage">Temp link to results</Link></li>
                   </ul>
                 </li>
               </ul>

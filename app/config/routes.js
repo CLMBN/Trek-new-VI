@@ -29,6 +29,8 @@ var Tours = require("../components/Tours");
 var Register = require("../components/Register");
 var Displaytour = require("../components/Displaytour");
 var Tempcomp = require("../components/Tempcomp");
+var Tourlist = require("../components/Tourlist");
+var ResultsPage = require("../components/ResultsPage");
 
 
 // Export the Routes
@@ -50,6 +52,8 @@ module.exports = (
       <Route path="register" component={Register} />
       <Route path="Displaytour" component={Displaytour} />
       <Route path="Tempcomp" component={Tempcomp} />
+      <Route path="Tourlist" component={Tourlist} />
+      <Route path="ResultsPage" component={ResultsPage} />
 
       {/* If user selects any other path... we get the Info Route */}
       <IndexRoute component={Search} />

@@ -1,7 +1,7 @@
 // Include React
 var React = require("react");
 
-var Profile = React.createClass({
+var CreateTrek = React.createClass({
 
   // Here we render the component
   render: function() {
