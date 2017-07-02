@@ -30,38 +30,35 @@ var Search = React.createClass({
     var category = "hello"
     var city = "nyc"
     return (
-      <section id="intro">
-      
-        <div className="slogan">
-          <h2>WELCOME TO <span className="text_color">Trek It Out</span> </h2>
-          <h4> Choose a City and a Category and we will connect you with a local Tour</h4>
-            <div className="form-group">
-              <label htmlFor="city"><h4>Select City:</h4></label>
-             
-              <select onChange={this.handleChange} className="form-control" id="city">
-                <option>New York City, NY</option>
-                <option>San Francisco, CA</option>
-                <option>Boston, MA</option>
-                <option>New Brunswick, NJ</option>
-              </select>
+      <section className="clearfix homeBanner">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12">
+              <div className="banerInfo">
+                <h1>Explore. Discover. Share</h1>
+                <p>Trek it Out helps to find local tours designed by locals</p>
+                <form className="form-inline" action="listing-sidebar-map-left.html" method="">
+                  <div className="form-group">
+                    <div className="input-group">
+                      <div className="input-group-addon">Find</div>
+                      <input type="text" className="form-control" id="findItem" placeholder="What are you looking for?"></input>
+                      <div className="input-group-addon addon-right"></div>
+                    </div>
+                  </div>
+                  <div className="form-group">
+                    <div className="input-group">
+                      <div className="input-group-addon">Near</div>
+                      <input type="text" className="form-control" id="nearLocation" placeholder="Location"></input>
+                      <div className="input-group-addon addon-right"><i className="icon-listy icon-target" aria-hidden="true"></i></div>
+                    </div>
+                  </div>
+                  <button type="submit" className="btn btn-primary">Search <i className="fa fa-search" aria-hidden="true"></i></button>
+                </form>
               </div>
-              <div>
-              <label htmlFor="category"><h4>Type of Tour:</h4></label>
-              <select onChange={this.handleChange} className="form-control" id="category">
-                <option>Bar Hop</option>
-                <option>Dinner and a Movie</option>
-                <option>Museums</option>
-                <option>Music</option>
-              </select>
             </div>
-            </div>
-
-        <div className="page-scroll">
-          <Link to={"tours/"+ this.state.category + "/" + this.state.city} ><button className="btn btn-circle">Create Idea</button></Link>
-            <i className="fa fa-angle-double-down animated"></i>
-          
+          </div>
         </div>
-        </section>
+      </section>
     );
   }
 });

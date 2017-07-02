@@ -2427,7 +2427,9 @@ footer {
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover; 
+  background-image: url(../img/banner/banner1.jpg);}
+
 
 .banerInfo {
   width: 100%;
