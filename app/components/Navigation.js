@@ -16,7 +16,7 @@ var Navigation = React.createClass({
 
       {/*<!-- TOP INFO BAR -->*/}
 
-      <div className="nav-wrapper">
+      <div className="nav-wrapper navbarWhite">
 
         {/*<!-- NAVBAR -->*/}
         <nav id="menuBar" className="navbar navbar-default lightHeader" role="navigation">
@@ -36,21 +36,18 @@ var Navigation = React.createClass({
             {/*<!-- Collect the nav links, forms, and other content for toggling -->*/}
             <div className="collapse navbar-collapse navbar-ex1-collapse">
               <ul className="nav navbar-nav navbar-right">
-                <li className=""><a href="blog.html">blog </a></li>
+                <li className=""><Link to="Search">New Search</Link></li>
                 <li className=" dropdown singleDrop">
                   <a href="javascript:void(0)" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <i className="fa fa-angle-down" aria-hidden="true"></i></a>
                   <ul className="dropdown-menu dropdown-menu-right">
-                      <li><a href="dashboard.html">Dashboard</a></li>
-                      <li><a href="add-listings.html">Add Listing</a></li>
-                      <li><a href="edit-listings.html">Edit Listing</a></li>
-                      <li><a href="listings.html">My Listings</a></li>
-                      <li><a href="profile.html">My Profile</a></li>
-                      <li><a href="oders.html">My Orders</a></li>
+                      <li><Link to="Profile">My Profile</Link></li>
+                      <li><Link to="Treks">Create a Trek</Link></li>
+                      <li><Link to="Displaytour">Temp link to results</Link></li>
                   </ul>
                 </li>
               </ul>
             </div>
-            <button type="button" className="btn btn-default navbar-btn" data-toggle="modal" data-target="#loginModal"> + <span>Add Listing</span> </button>
+            <button type="button" className="btn btn-default navbar-btn"><Link to="Login"> + <span>Login</span> </Link></button>
           </div>
         </nav>
       </div>

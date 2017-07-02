@@ -1,7 +1,7 @@
 // Include React
 var React = require("react");
 
-var Treks = React.createClass({
+var Profile = React.createClass({
 
   // Here we render the component
   render: function() {
@@ -14,7 +14,7 @@ var Treks = React.createClass({
       <div className="col-xs-12">
         <form action="" method="" className="listing__form">
           <div className="dashboardPageTitle text-center">
-            <h2><strong>Create new Trek</strong></h2>
+            <h2>Create new Trek</h2>
           </div>
           <div className="dashboardBoxBg mb30">
             <div className="profileIntro paraMargin">
@@ -95,9 +95,10 @@ var Treks = React.createClass({
     </div>
   </div>
 </section>
+
     );
   }
 });
 
 // Export the component back for use in other files
-module.exports = Treks;
+module.exports = CreateTrek;

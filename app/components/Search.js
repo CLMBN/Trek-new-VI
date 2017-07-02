@@ -53,6 +53,7 @@ var Search = React.createClass({
                     </div>
                   </div>
                   <button type="submit" className="btn btn-primary">Search <i className="fa fa-search" aria-hidden="true"></i></button>
+                  <button> <Link to="Tempcomp">Temp Result</Link></button>
                 </form>
               </div>
             </div>

@@ -395,13 +395,13 @@ body.bodyColor .nav-wrapper.bb-fixed-header .lightHeader {
   .nav-wrapper.bb-fixed-header .lightHeader,
   .nav-wrapper.bb-fixed-header.navbarWhite .lightHeader {
     position: fixed;
-    height: 97px;
+    height: 60px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
     @media (min-width: 768px) {
       .nav-wrapper.bb-fixed-header .lightHeader,
       .nav-wrapper.bb-fixed-header.navbarWhite .lightHeader {
-        height: 80px; } }
+        height: 60px; } }
     @media (min-width: 768px) {
       .nav-wrapper.bb-fixed-header .lightHeader .navbar-brand,
       .nav-wrapper.bb-fixed-header.navbarWhite .lightHeader .navbar-brand {
