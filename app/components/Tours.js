@@ -142,7 +142,7 @@ var Tours = React.createClass({
 
           <div className="col-lg-12">
               
-            <h1>Results Tours</h1>
+            <h1>Results Treks</h1>
 
           </div>
               

@@ -26,7 +26,7 @@ var Tourlist = React.createClass({
                   <li><i className="fa fa-star" aria-hidden="true"></i></li>
                   <li><i className="fa fa-star" aria-hidden="true"></i></li>
                 </ul>
-                <h2><a href="blog-details.html" style="color: #222222">Sunny Side Heights Cathedral, Mexican and Jazz</a> <span className="likeCount"><i className="fa fa-heart-o" aria-hidden="true"></i> 5 k</span></h2>
+                <h2><a href="blog-details.html">Sunny Side Heights Cathedral, Mexican and Jazz</a> <span className="likeCount"><i className="fa fa-heart-o" aria-hidden="true"></i> 5 k</span></h2>
                 <p>Sunny Side Heights <span className="placeName">New York, NY</span></p>
                 <p>This Trek will take you through three of my favorite spots in Sunny Side Heights (Upper West Side) Start with a visit to the North West part of Central Park. Followed by a Stop at The Cathedral Church of St. John the Divine. Mexican Lunch at Taqueria Y Fonda for some amazing Burritos. Finally finish of at Smoke and Jazz Supper Club.</p>
                 <ul className="list-inline list-tag">
