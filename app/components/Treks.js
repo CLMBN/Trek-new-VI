@@ -19,7 +19,7 @@ var Treks = React.createClass({
           <div className="dashboardBoxBg mb30">
             <div className="profileIntro paraMargin">
               <h3>Submit Trek Details</h3>
-              <p>User this form to help others get the true flavor of your city. Show off the hidden gems.</p>
+              <p>Use this form to help others get the true flavor of your city. Show off the hidden gems.</p>
               <div className="row">
                 <div className="form-group col-sm-6 col-xs-12">
                   <label for="listingTitle">Trek Title</label>

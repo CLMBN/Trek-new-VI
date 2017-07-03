@@ -27,8 +27,10 @@ var Search = React.createClass({
 
   // Here we render the component
   render: function() {
+
     var category = "hello"
     var city = "nyc"
+
     return (
       <section className="clearfix homeBanner">
         <div className="container">
@@ -40,20 +42,33 @@ var Search = React.createClass({
                 <form className="form-inline" action="listing-sidebar-map-left.html" method="">
                   <div className="form-group">
                     <div className="input-group">
-                      <div className="input-group-addon">Find</div>
-                      <input type="text" className="form-control" id="findItem" placeholder="What are you looking for?"></input>
-                      <div className="input-group-addon addon-right"></div>
+                      <div className="input-group-addon">City</div>
+                      <select onChange={this.handleChange} className="form-control" id="city">
+                        <option>Select City</option>
+                        <option>NYC</option>
+                        <option>San-Francisco</option>
+                        <option>Boston</option>
+                        <option>Orlando</option>
+                      </select>
+                      <div className="input-group-addon addon-right"><i className="icon-listy icon-target" aria-hidden="true"></i></div>
                     </div>
                   </div>
                   <div className="form-group">
                     <div className="input-group">
-                      <div className="input-group-addon">Near</div>
-                      <input type="text" className="form-control" id="nearLocation" placeholder="Location"></input>
-                      <div className="input-group-addon addon-right"><i className="icon-listy icon-target" aria-hidden="true"></i></div>
+                      <div className="input-group-addon">Category</div>
+                      <select onChange={this.handleChange} className="form-control" id="category">
+                        <option>Select Category</option>
+                        <option>Bars</option>
+                        <option>Cathedrals</option>
+                        <option>Dinner&Movie</option>
+                        <option>Museums</option>
+                        <option>Music</option>
+                        <option>Parks</option>
+                      </select>
+                      <div className="input-group-addon addon-right"></div>
                     </div>
                   </div>
-                  <button type="submit" className="btn btn-primary">Search <i className="fa fa-search" aria-hidden="true"></i></button>
-                  <button> <Link to="Tempcomp">Temp Result</Link></button>
+                  <Link to={"tours"+"/" + this.state.category + "/" + this.state.city} ><button type="submit" className="btn btn-primary">Search <i className="fa fa-search" aria-hidden="true"></i></button></Link>
                 </form>
               </div>
             </div>
